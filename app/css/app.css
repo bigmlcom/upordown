@@ -124,9 +124,18 @@ left: 12px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -khtml-border-radius: 6px;
-  margin-top: 30px;
+  margin-top: 40px;
   background: #f1f1f1;
   padding: 10px 20px;
+  position: relative;
+}
+#result .alert{
+  position: absolute;
+  top: -25px;
+  left: 0;
+  margin: 0;
+  padding: 6px 15px;
+  width: 100%;
 }
 .arrow{
   background: url(../../images/arrows.png) no-repeat 100% 50%;
