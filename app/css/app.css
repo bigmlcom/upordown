@@ -87,6 +87,10 @@ html,body {
   -khtml-border-radius: 20px;
   padding-left: 40px;
   padding-right: 40px;
+  outline: none;
+}
+.btn.btn-primary:focus{
+  outline: none;
 }
 .btn.btn-primary:hover{
   background: #aac51d;
@@ -133,20 +137,20 @@ left: 12px;
   display: none;
 }
 .arrow{
-  background: url(../images/arrows.png) no-repeat 100% 50%;
-  height: 215px;
+  background: url(../images/arrows.png) no-repeat 50% 145%;
+  height: 180px;
 }
 .arrow.up{
-  background: url(../images/arrows_green.png) no-repeat 100% 50%;
+  background: url(../images/arrows_green.png) no-repeat 50% 145%;
 }
 .arrow.down{
-  background: url(../images/arrows_red.png) no-repeat 100% 50%;
+  background: url(../images/arrows_red.png) no-repeat 50% 145%;
 }
 .arrow.up.down{
-  background: url(../images/arrows_green_red.png) no-repeat 100% 50%;
+  background: url(../images/arrows_green_red.png) no-repeat 50% 145%;
 }
-.arrow h1{
-  margin-top: 86px;
+.arrow h3{
+  color: #999;
 }
 .confidence{
   -ms-border-radius: 6px;
