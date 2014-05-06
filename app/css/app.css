@@ -43,12 +43,6 @@ html,body {
   color: #222933;
   font-weight: 200;
 }
-.header h2 small{
-  font-size: 13px;
-  display: block;
-  padding-top: 3px;
-  color: #8e95a0
-}
 #description .text-right{
   color: #888;
   margin-bottom: 20px;
