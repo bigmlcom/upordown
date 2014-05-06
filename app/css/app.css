@@ -136,6 +136,7 @@ left: 12px;
   margin: 0;
   padding: 6px 15px;
   width: 100%;
+  display: none;
 }
 .arrow{
   background: url(../../images/arrows.png) no-repeat 100% 50%;
