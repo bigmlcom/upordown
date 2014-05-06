@@ -4,10 +4,13 @@ $(function() {
         FINISHED = 5,
         FAULTY = -1;
 
+    // Customize BIGML_USERNAME, BIGML_API_KEY and MODEL_RESOURCE
+    // with your own BigML credentials and with the Model Id that
+    // you have created in the other part of the Workshop
     var BIGML_USERNAME = 'bmlwpa',
         BIGML_API_KEY = 'c8f795dedff3541d17e478bd1c2199b6c4cb3077',
         BIGML_AUTH = 'username=' + BIGML_USERNAME + ';api_key=' + BIGML_API_KEY;
-        modelResource = 'model/5367c31bffa04451820203a5';
+        MODEL_RESOURCE = 'model/5367c31bffa04451820203a5';
 
     /*
      * Price at closing of the previous day minus the price at opening
@@ -98,7 +101,7 @@ $(function() {
 
         // https://bigml.com/developers/predictions#p_create
         var postData = {
-            model: modelResource,
+            model: MODEL_RESOURCE,
             input_data: inputData,
             tags: ['BigMLWorkshop'] // Optional (just for filter predictions)
         };
