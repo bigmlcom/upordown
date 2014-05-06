@@ -117,7 +117,7 @@ html,body {
   height: 16px;
   top: 14px;
 left: 12px;
-  background: url(../../images/button_loader.gif) no-repeat 0 0;
+  background: url(../images/button_loader.gif) no-repeat 0 0;
 }
 #result{
    -ms-border-radius: 6px;
@@ -139,17 +139,17 @@ left: 12px;
   display: none;
 }
 .arrow{
-  background: url(../../images/arrows.png) no-repeat 100% 50%;
+  background: url(../images/arrows.png) no-repeat 100% 50%;
   height: 215px;
 }
 .arrow.up{
-  background: url(../../images/arrows_green.png) no-repeat 100% 50%;
+  background: url(../images/arrows_green.png) no-repeat 100% 50%;
 }
 .arrow.down{
-  background: url(../../images/arrows_red.png) no-repeat 100% 50%;
+  background: url(../images/arrows_red.png) no-repeat 100% 50%;
 }
 .arrow.up.down{
-  background: url(../../images/arrows_green_red.png) no-repeat 100% 50%;
+  background: url(../images/arrows_green_red.png) no-repeat 100% 50%;
 }
 .arrow h1{
   margin-top: 86px;
@@ -194,7 +194,7 @@ left: 12px;
   font-weight: 300;
   font-size: 12px;
   padding: 10px 70px 10px 0;
-  background: url(../../images/logo_bigml.png) no-repeat 100% 50%;
+  background: url(../images/logo_bigml.png) no-repeat 100% 50%;
   opacity: 0.8;
 }
 .footer a:hover{
