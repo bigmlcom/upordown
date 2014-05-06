@@ -55,3 +55,6 @@ docs/_build/
 # vim
 *.swp
 *.un~
+
+# MacOS
+.DS_Store
