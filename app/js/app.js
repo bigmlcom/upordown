@@ -4,10 +4,10 @@ $(function() {
         FINISHED = 5,
         FAULTY = -1;
 
-    var BIGML_USERNAME = 'osroca',
-        BIGML_API_KEY = '2ce66ca39d5935f9b0183c467cb0c39ab29a5783',
+    var BIGML_USERNAME = 'bmlwpa',
+        BIGML_API_KEY = 'c8f795dedff3541d17e478bd1c2199b6c4cb3077',
         BIGML_AUTH = 'username=' + BIGML_USERNAME + ';api_key=' + BIGML_API_KEY;
-        modelResource = 'model/53677266ffa044517f00984b';
+        modelResource = 'model/5367c31bffa04451820203a5';
 
     /*
      * Price at closing of the previous day minus the price at opening
