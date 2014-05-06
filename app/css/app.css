@@ -102,6 +102,13 @@ html,body {
   color: #ddd;
   border: #eee;
   cursor: default;
+  opacity: 1;
+}
+.btn.btn-primary.disabled:hover{
+  background: #eee;
+  color: #ddd;
+  border: #eee;
+  cursor: default;
 }
 .calcule.loading span{
   position: absolute;
