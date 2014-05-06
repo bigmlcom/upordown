@@ -75,9 +75,10 @@ html,body {
   text-align: center;
   padding-bottom: 8px;
 }
-input.calcule{
+.calcule{
   float: right;
   margin: 148px 0 0 0;
+  position: relative;
 }
 .btn.btn-primary{
   border: 1px solid #aac51d;
@@ -101,6 +102,15 @@ input.calcule{
   color: #ddd;
   border: #eee;
   cursor: default;
+}
+.calcule.loading span{
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+left: 12px;
+  background: url(../../images/button_loader.gif) no-repeat 0 0;
 }
 #result{
    -ms-border-radius: 6px;
