@@ -11,45 +11,98 @@
         <script src="js/app.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="content">
-            <div id="description">
+        <div class="header">
+            <div class="content">
+                <img src="../images/site_logo.png"/>
                 <h2>Tech Comp. Stock Prediction</h2>
-                <h3>BigML - Predictive App Workshop - May 2014</h3>
+                <span class="clear"></span>
             </div>
+        </div>
+        <div class="wrapper">
+            <div class="content">
 
-            <div id="prediction">
-                <form>
-                    <div class="input">
-                        <label for="id_open-1">Yesterday Open</label>
-                        <input id="id_open-1" type="number" name="open-1" value="219.53" min="0.01" step="0.01" />
-                    </div>
-                    <div class="input">
-                        <label for="id_close-1">Yesterday Close</label>
-                        <input id="id_close-1" type="number" name="close-1" value="219.42" min="0.01" step="0.01" />
-                    </div>
-                    <div class="input">
-                        <label for="id_100002">Yesterday Volume</label>
-                        <input lang="en" id="id_100002" class="input-data" type="number" name="100002" value="5307386.29" min="0" max="725734677.00" step="0.01" />
-                    </div>
-                    <div class="input">
-                        <label for="id_100003">Yesterday Bullish</label>
-                        <input lang="en" id="id_100003" class="input-data" type="number" name="100003" value="2.43" min="0" max="4" step="0.01"/>
-                    </div>
-                    <div class="input">
-                        <label for="id_100004">Yesterday Bearish</label>
-                        <input id="id_100004" class="input-data" type="number" name="100004" value="2.5" min="0" max="5" step="0.01"/>
-                    </div>
-                    <div class="input">
-                        <label for="id_open">Today Open</label>
-                        <input id="id_open" type="number" name="open" value="218.33" min="0.01" step="0.01" />
-                    </div>
-                    <input id="id_n_close-1" class="input-data" type="hidden" name="100000" value="0"/>
-                    <input id="id_n_open" class="input-data" type="hidden" name="100001" value="0" />
-                    <input type="submit" value="Up Or Down" />
-                </form>
+                <div id="description">
+                    <p class="text-right">BigML - Predictive App Workshop - May 2014</p>
+
+                </div>
+
+                <div id="prediction">
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="box_form">
+                                    <h3>YESTERDAY</h3>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label" for="id_open-1">Open</label>
+                                        <div class="col-sm-8">
+                                            <input id="id_open-1" class="form-control" type="number" name="open-1" value="219.53" min="0.01" step="0.01" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label"  for="id_close-1">Close</label>
+                                        <div class="col-sm-8">
+                                            <input id="id_close-1" class="form-control" type="number" name="close-1" value="219.42" min="0.01" step="0.01" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label"  for="id_100002">Volume</label>
+                                        <div class="col-sm-8">
+                                            <input lang="en" id="id_100002" class="input-data form-control" type="number" name="100002" value="5307386.29" min="0" max="725734677.00" step="0.01" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label"  for="id_100003">Bullish</label>
+                                        <div class="col-sm-8">
+                                            <input lang="en" id="id_100003" class="input-data form-control" type="number" name="100003" value="2.43" min="0" max="4" step="0.01"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label"  for="id_100004">Bearish</label>
+                                        <div class="col-sm-8">
+                                            <input id="id_100004" class="input-data form-control" type="number" name="100004" value="2.5" min="0" max="5" step="0.01"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="box_form">
+                                    <h3>TODAY</h3>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label" for="id_open">Open</label>
+                                        <div class="col-sm-8">
+                                            <input id="id_open" class="form-control" type="number" name="open" value="218.33" min="0.01" step="0.01" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <input id="id_n_close-1" class="input-data" type="hidden" name="100000" value="0"/>
+                                <input id="id_n_open" class="input-data" type="hidden" name="100001" value="0" />
+                                <input type="submit" class="btn btn-primary btn-lg calcule" value="Up or Down?" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="result">
+                        <!-- Añadir la class "up" o "down" segun el resultado, si aun no se ha calculado solo "arrow" -->
+                        <div class="col-xs-8 arrow up">
+                            <h1>RESULT:</h1>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="confidence">
+                                <span>CONFIDENCE</span>
+                                <!-- mostrar un "?" cuando aun no este calculado y sustituirlo por el resultado -->
+                                <strong>?</strong>
+                            </div>
+                        </div>
+                        <span class="clear"></span>
+                </div>
             </div>
-
-            <div id="result">
+            <div class="footer">
+                <div class="content">
+                    <a href="http://bigml.com" target="_blank" class="powered">Powered by</a>
+                </div>
             </div>
         </div>
     </body>
